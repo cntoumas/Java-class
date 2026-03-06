@@ -1,15 +1,17 @@
 import java.util.Scanner;   
-class Ex1{
+
+class Ex2{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a real number: ");
         double number = input.nextDouble();
         int integer;
-        double decimal;
         integer = (int) number;
-        decimal = number - integer; 
-        System.out.println("Integer part: " + integer);
-        System.out.println("Decimal part: " + decimal);
+        if ((number - integer) != 0) {
+           System.out.println("The number is not an integer."); 
+        } else {
+            System.out.println("The number is an integer.");
+        }
         input.close();
     }
 }
