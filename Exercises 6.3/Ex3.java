@@ -10,5 +10,6 @@ class Ex3 {
         double d = input.nextDouble();
         double Ldb = 20 * Math.log10(d) + 20 * Math.log10(freq) + 20 * Math.log10((4*Math.PI)/C);
         System.out.println("The path loss is: " + Ldb + " dB");
+        input.close();
     }
 }
