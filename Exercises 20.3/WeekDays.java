@@ -36,7 +36,7 @@ class WeekDays {
             System.out.println(day);
             System.out.println("Enter a number (1-7): ");
             num = scanner.nextInt();
-        } while (num > 0 && num < 8);
+        } while (num != 0);
         System.out.println("Invalid input. Program terminated.");
     }
 }
