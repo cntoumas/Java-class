@@ -1,0 +1,24 @@
+public class Circle {
+    
+    private double x;      
+    private double y;      
+    private double radius; 
+    
+    
+    public Circle(double x, double y, double radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+    
+    
+    
+    public double circumference() {
+        return 2 * Math.PI * radius;
+    }
+    
+    
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+}
